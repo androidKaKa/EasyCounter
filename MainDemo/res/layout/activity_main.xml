@@ -9,18 +9,39 @@
     tools:context="com.example.maindemo.MainActivity" >
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textVShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="max" />
+
+    <EditText
+        android:id="@+id/editGetNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="26dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
 
     <Button
         android:id="@+id/btnCounter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="131dp"
-        android:layout_toRightOf="@+id/textView1"
-        android:text="Button" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editGetNum"
+        android:text="set" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editGetNum"
+        android:layout_toRightOf="@+id/btnCounter"
+        android:text="stop" />
 
 </RelativeLayout>
